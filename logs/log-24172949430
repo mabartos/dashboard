@@ -1,0 +1,1148 @@
+Keycloak Admin Client	UNKNOWN STEP	﻿2026-04-09T04:52:37.9593552Z Current runner version: '2.333.1'
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:37.9617299Z ##[group]Runner Image Provisioner
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:37.9618069Z Hosted Compute Agent
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:37.9618684Z Version: 20260213.493
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:37.9619322Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:37.9620024Z Build Date: 2026-02-13T00:28:41Z
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:37.9620720Z Worker ID: {d390b192-127f-4bda-bb70-5a7fa6e3d579}
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:37.9621380Z Azure Region: westus2
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:37.9621917Z ##[endgroup]
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:37.9623258Z ##[group]Operating System
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:37.9623975Z Ubuntu
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:37.9624397Z 24.04.4
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:37.9624825Z LTS
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:37.9625306Z ##[endgroup]
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:37.9625797Z ##[group]Runner Image
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:37.9626309Z Image: ubuntu-24.04
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:37.9627078Z Version: 20260329.72.1
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:37.9628238Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260329.72/images/ubuntu/Ubuntu2404-Readme.md
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:37.9629753Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260329.72
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:37.9630606Z ##[endgroup]
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:37.9631589Z ##[group]GITHUB_TOKEN Permissions
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:37.9633402Z Contents: read
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:37.9633981Z Metadata: read
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:37.9634505Z ##[endgroup]
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:37.9637378Z Secret source: Actions
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:37.9638066Z Prepare workflow directory
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:38.0054867Z Prepare all required actions
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:38.0095001Z Getting action download info
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:38.5017214Z Download action repository 'actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8' (SHA:08c6903cd8c0fde910a37f88322edcfb5dd907a8)
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:38.6294009Z Download action repository 'actions/download-artifact@37930b1c2abaa49bbe596cd826c3c89aef350131' (SHA:37930b1c2abaa49bbe596cd826c3c89aef350131)
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.2346652Z Complete job name: Keycloak Admin Client
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.3071093Z ##[group]Run actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.3072213Z with:
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.3072658Z   repository: keycloak/keycloak
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.3073366Z   token: ***
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.3073785Z   ssh-strict: true
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.3074211Z   ssh-user: git
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.3074639Z   persist-credentials: true
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.3075116Z   clean: true
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.3075545Z   sparse-checkout-cone-mode: true
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.3076061Z   fetch-depth: 1
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.3076470Z   fetch-tags: false
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.3077197Z   show-progress: true
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.3077637Z   lfs: false
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.3078075Z   submodules: false
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.3078522Z   set-safe-directory: true
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.3079261Z env:
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.3079854Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.3080604Z   WORKSPACE: @keycloak/keycloak-admin-client
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.3081215Z   RETRY_COUNT: 3
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.3081621Z ##[endgroup]
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4001030Z Syncing repository: keycloak/keycloak
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4002929Z ##[group]Getting Git version info
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4003771Z Working directory is '/home/runner/work/keycloak/keycloak'
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4004792Z [command]/usr/bin/git version
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4030714Z git version 2.53.0
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4052799Z ##[endgroup]
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4067762Z Temporarily overriding HOME='/home/runner/work/_temp/0345f7a4-630a-4e68-a52d-33fda2f9e33a' before making global git config changes
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4069700Z Adding repository directory to the temporary git global config as a safe directory
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4072569Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/keycloak/keycloak
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4105318Z Deleting the contents of '/home/runner/work/keycloak/keycloak'
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4109387Z ##[group]Initializing the repository
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4114173Z [command]/usr/bin/git init /home/runner/work/keycloak/keycloak
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4194542Z hint: Using 'master' as the name for the initial branch. This default branch name
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4196312Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4198158Z hint: to use in all of your new repositories, which will suppress this warning,
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4199694Z hint: call:
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4200475Z hint:
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4201512Z hint: 	git config --global init.defaultBranch <name>
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4202785Z hint:
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4203886Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4205629Z hint: 'development'. The just-created branch can be renamed via this command:
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4207418Z hint:
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4208312Z hint: 	git branch -m <name>
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4209225Z hint:
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4210438Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4212315Z Initialized empty Git repository in /home/runner/work/keycloak/keycloak/.git/
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4215444Z [command]/usr/bin/git remote add origin https://github.com/keycloak/keycloak
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4274342Z ##[endgroup]
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4275686Z ##[group]Disabling automatic garbage collection
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4278927Z [command]/usr/bin/git config --local gc.auto 0
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4308716Z ##[endgroup]
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4310112Z ##[group]Setting up auth
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4315782Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4347397Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4625777Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4656280Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4878411Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4927620Z ##[endgroup]
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4936449Z ##[group]Fetching the repository
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:39.4938533Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +5183e49a8f9bce20a690c6f80b438cf9d4f6c80f:refs/remotes/origin/main
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:41.0518927Z From https://github.com/keycloak/keycloak
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:41.0523199Z  * [new ref]         5183e49a8f9bce20a690c6f80b438cf9d4f6c80f -> origin/main
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:41.0549099Z ##[endgroup]
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:41.0550979Z ##[group]Determining the checkout info
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:41.0553090Z ##[endgroup]
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:41.0557440Z [command]/usr/bin/git sparse-checkout disable
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:41.0599351Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:41.0627587Z ##[group]Checking out the ref
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:41.0631591Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:41.9792759Z Switched to a new branch 'main'
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:41.9795745Z branch 'main' set up to track 'origin/main'.
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:41.9831282Z ##[endgroup]
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:41.9877221Z [command]/usr/bin/git log -1 --format=%H
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:41.9902649Z 5183e49a8f9bce20a690c6f80b438cf9d4f6c80f
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:42.0120142Z ##[group]Run actions/download-artifact@37930b1c2abaa49bbe596cd826c3c89aef350131
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:42.0120576Z with:
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:42.0120752Z   name: keycloak
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:42.0120945Z   merge-multiple: false
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:42.0121160Z   repository: keycloak/keycloak
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:42.0121376Z   run-id: 24172949430
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:42.0121561Z env:
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:42.0121821Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:42.0122430Z   WORKSPACE: @keycloak/keycloak-admin-client
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:42.0122690Z   RETRY_COUNT: 3
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:42.0122886Z ##[endgroup]
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:42.1500104Z Downloading single artifact
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:42.4409065Z Preparing to download the following artifacts:
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:42.4410057Z - keycloak (ID: 6342492059, Size: 173307403, Expected Digest: sha256:543e680541afca7d866247ea2da89988f96b185e6832c14074e8972d6b06a32a)
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:42.9231414Z Redirecting to blob download url: https://productionresultssa9.blob.core.windows.net/actions-results/46404d68-a954-4280-bfcc-20b2a702afc4/workflow-job-run-a74dd938-1bfe-50b1-9821-b3c758239d7e/artifacts/d63f4a0cdaab52726d1ce895e4ac8c3507049e617b0a97d0a0af508bdad34a8d.zip
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:42.9232822Z Starting download of artifact to: /home/runner/work/keycloak/keycloak
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:43.2741794Z (node:2279) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:43.2743670Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:50.1524815Z SHA256 digest of downloaded artifact is 543e680541afca7d866247ea2da89988f96b185e6832c14074e8972d6b06a32a
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:50.1525674Z Artifact download completed successfully.
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:50.1538233Z Total of 1 artifact(s) downloaded
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:50.1538799Z Download artifact has finished successfully
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:50.1763977Z Prepare all required actions
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:50.1764445Z Getting action download info
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:50.3824892Z Download action repository 'actions/setup-java@be666c2fcd27ec809703dec50e508c2fdc7f6654' (SHA:be666c2fcd27ec809703dec50e508c2fdc7f6654)
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:50.8674019Z ##[group]Run ./.github/actions/java-setup
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:50.8674299Z with:
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:50.8674481Z   distribution: temurin
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:50.8674688Z   java-version: 25
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:50.8674862Z env:
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:50.8675151Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:50.8675536Z   WORKSPACE: @keycloak/keycloak-admin-client
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:50.8675788Z   RETRY_COUNT: 3
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:50.8675966Z ##[endgroup]
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:50.8826938Z ##[group]Run actions/setup-java@be666c2fcd27ec809703dec50e508c2fdc7f6654
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:50.8827297Z with:
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:50.8827465Z   distribution: temurin
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:50.8827666Z   java-version: 25
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:50.8827880Z   java-package: jdk
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:50.8828070Z   check-latest: false
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:50.8828257Z   server-id: github
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:50.8828445Z   server-username: GITHUB_ACTOR
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:50.8828670Z   server-password: GITHUB_TOKEN
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:50.8828899Z   overwrite-settings: true
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:50.8829119Z   job-status: success
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:50.8829428Z   token: ***
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:50.8829597Z env:
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:50.8829864Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:50.8830247Z   WORKSPACE: @keycloak/keycloak-admin-client
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:50.8830503Z   RETRY_COUNT: 3
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:50.8830680Z ##[endgroup]
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0322460Z ##[group]Installed distributions
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0388322Z Resolved Java 25.0.2+10 from tool-cache
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0388826Z Setting Java 25.0.2+10 as the default
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0400236Z Creating toolchains.xml for JDK version 25 from temurin
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0488893Z Writing to /home/runner/.m2/toolchains.xml
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0489455Z 
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0489619Z Java configuration:
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0489962Z   Distribution: temurin
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0490313Z   Version: 25.0.2+10
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0490797Z   Path: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.2-10/x64
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0491236Z 
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0491664Z ##[endgroup]
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0505025Z Creating settings.xml with server-id: github
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0507921Z Writing to /home/runner/.m2/settings.xml
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0652088Z ##[group]Run tar xfvz keycloak-999.0.0-SNAPSHOT.tar.gz
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0652562Z [36;1mtar xfvz keycloak-999.0.0-SNAPSHOT.tar.gz[0m
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0653835Z [36;1mkeycloak-999.0.0-SNAPSHOT/bin/kc.sh start-dev --http-port 8180 --features transient-users,oid4vc-vci,declarative-ui,quick-theme,spiffe,kubernetes-service-accounts,workflows,client-auth-federated,jwt-authorization-grant,client-admin-api:v2 &> ~/server.log &[0m
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0655415Z [36;1mcurl --connect-timeout 5 --max-time 10 --retry 10 --retry-all-errors --retry-delay 10 --retry-max-time 120 -s -o /dev/null http://127.0.0.1:8180[0m
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0689929Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0690261Z env:
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0690543Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0690936Z   WORKSPACE: @keycloak/keycloak-admin-client
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0691193Z   RETRY_COUNT: 3
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0691537Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.2-10/x64
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0692010Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.2-10/x64
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0692377Z   KC_BOOTSTRAP_ADMIN_USERNAME: admin
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0692627Z   KC_BOOTSTRAP_ADMIN_PASSWORD: admin
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0692854Z ##[endgroup]
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0788229Z keycloak-999.0.0-SNAPSHOT/version.txt
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0789327Z keycloak-999.0.0-SNAPSHOT/conf/cache-ispn.xml
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0789775Z keycloak-999.0.0-SNAPSHOT/README.md
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0790179Z keycloak-999.0.0-SNAPSHOT/themes/README.md
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0791088Z keycloak-999.0.0-SNAPSHOT/bin/federation-sssd-setup.sh
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0791924Z keycloak-999.0.0-SNAPSHOT/bin/kc.sh
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0792453Z keycloak-999.0.0-SNAPSHOT/bin/kc.bat
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0792951Z keycloak-999.0.0-SNAPSHOT/bin/
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0793390Z keycloak-999.0.0-SNAPSHOT/bin/client/
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0793902Z keycloak-999.0.0-SNAPSHOT/bin/client/lib/
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0794427Z keycloak-999.0.0-SNAPSHOT/bin/kcadm.sh
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0794898Z keycloak-999.0.0-SNAPSHOT/bin/kcadm.bat
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0795369Z keycloak-999.0.0-SNAPSHOT/bin/kcreg.bat
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0795884Z keycloak-999.0.0-SNAPSHOT/bin/kcreg.sh
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.0796477Z keycloak-999.0.0-SNAPSHOT/bin/client/keycloak-admin-cli-999.0.0-SNAPSHOT.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.1252576Z keycloak-999.0.0-SNAPSHOT/bin/client/lib/bcprov-jdk18on-1.83.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.1806406Z keycloak-999.0.0-SNAPSHOT/bin/client/lib/keycloak-crypto-fips1402-999.0.0-SNAPSHOT.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.1811022Z keycloak-999.0.0-SNAPSHOT/bin/client/lib/keycloak-crypto-default-999.0.0-SNAPSHOT.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.1812972Z keycloak-999.0.0-SNAPSHOT/providers/README.md
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.1813680Z keycloak-999.0.0-SNAPSHOT/lib/
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.1814105Z keycloak-999.0.0-SNAPSHOT/lib/app/
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.1814565Z keycloak-999.0.0-SNAPSHOT/lib/quarkus/
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.1815090Z keycloak-999.0.0-SNAPSHOT/lib/lib/
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.1815638Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.1816124Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.1816604Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.1817487Z keycloak-999.0.0-SNAPSHOT/lib/app/keycloak.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.1818330Z keycloak-999.0.0-SNAPSHOT/lib/quarkus/build-system.properties
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.1819036Z keycloak-999.0.0-SNAPSHOT/lib/quarkus/transformed-bytecode.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.1857326Z keycloak-999.0.0-SNAPSHOT/lib/quarkus/generated-bytecode.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2078227Z keycloak-999.0.0-SNAPSHOT/lib/quarkus/quarkus-application.dat
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2103629Z keycloak-999.0.0-SNAPSHOT/lib/quarkus-run.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2104458Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/org.aesh.aesh-2.8.2.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2130134Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.resteasy.reactive.resteasy-reactive-processor-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2141683Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-smallrye-openapi-common-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2143035Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-agroal-spi-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2144060Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-assistant-dev-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2145180Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-vertx-http-deployment-spi-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2146132Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-grpc-common-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2147224Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/deployment-class-path.dat
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2148228Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-smallrye-health-dev-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2149055Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.smallrye.smallrye-open-api-spring-4.2.4.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2150244Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-hibernate-orm-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2166309Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-smallrye-context-propagation-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2168076Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-resteasy-common-spi-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2169097Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-arc-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2191834Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-bootstrap-core-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2201530Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-jdbc-postgresql-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2203642Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-rest-jackson-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2208255Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-jdbc-mysql-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2209283Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-narayana-jta-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2210532Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-devui-deployment-spi-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2215207Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-bootstrap-json-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2217750Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.smallrye.common.smallrye-common-process-2.16.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2224798Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-tls-registry-deployment-spi-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2225985Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-jaxrs-spi-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2226609Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/org.fusesource.jansi.jansi-2.4.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2241480Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.smallrye.classfile.jdk-classfile-backport-26.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2308790Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-vertx-http-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2319798Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-hibernate-orm-deployment-spi-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2321095Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-smallrye-health-spi-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2321874Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/net.bytebuddy.byte-buddy-agent-1.17.8.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2347956Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-kubernetes-service-binding-spi-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2349248Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-undertow-spi-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2350467Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-rest-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2361594Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-jdbc-oracle-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2362639Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-swagger-ui-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2364272Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/org.jetbrains.annotations-26.0.2.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2366552Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.smallrye.smallrye-open-api-vertx-4.2.4.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2368984Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-jackson-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2370019Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.smallrye.smallrye-health-ui-4.3.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2375975Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-vertx-deployment-spi-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2377348Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-jdbc-mariadb-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2378557Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-virtual-threads-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2379319Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-smallrye-openapi-dev-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2380679Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-micrometer-registry-prometheus-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2381452Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.smallrye.common.smallrye-common-resource-2.16.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2382603Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-datasource-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2383693Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-class-change-agent-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2384942Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.http.quarkus-http-servlet-5.4.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2420810Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.http.quarkus-http-http-core-5.4.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2422881Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-rest-jackson-common-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2424119Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-bootstrap-app-model-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2440860Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/org.graalvm.sdk.word-23.1.2.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2443326Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-micrometer-opentelemetry-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2445125Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-smallrye-health-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2446979Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/org.aesh.readline-2.6.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2472060Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-opentelemetry-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2481302Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-arc-test-supplement-decorator-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2482645Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/org.jetbrains.kotlinx.kotlinx-metadata-jvm-0.9.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2556341Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.http.quarkus-http-core-5.4.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2622407Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-hibernate-validator-spi-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2624744Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/org.apache.commons.commons-compress-1.28.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2703493Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-hibernate-validator-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2706403Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-jsonp-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2707904Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-jdbc-h2-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2709517Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-panache-hibernate-common-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2710936Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-rest-spi-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2712170Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-mutiny-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2716063Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-jdbc-mssql-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2719171Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.smallrye.jandex-gizmo2-3.5.3.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2720725Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.smallrye.smallrye-open-api-jaxrs-4.2.4.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2722116Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-reactive-routes-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2725311Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-panache-hibernate-common-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2727106Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-core-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2829447Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-reactive-datasource-spi-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2832333Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-rest-server-spi-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2833494Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-security-spi-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2839504Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-datasource-deployment-spi-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2840796Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-resteasy-server-common-spi-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2842051Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/org.jetbrains.kotlin.kotlin-stdlib-2.3.10.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2966363Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/org.keycloak.keycloak-quarkus-server-deployment-999.0.0-SNAPSHOT.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2969140Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-smallrye-openapi-spi-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2970410Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-tls-registry-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2971544Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.gizmo.gizmo-1.10.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2985756Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/org.graalvm.sdk.nativeimage-23.1.2.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.2997755Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.resteasy.reactive.resteasy-reactive-common-processor-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3006536Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-builder-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3014007Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.smallrye.smallrye-open-api-ui-4.2.4.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3088613Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-caffeine-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3089844Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/appmodel.dat
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3096270Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-netty-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3097808Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-smallrye-context-propagation-spi-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3099126Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-assistant-deployment-spi-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3100141Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.gizmo.gizmo2-2.1.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3137453Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-panache-common-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3142137Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-micrometer-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3146749Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-smallrye-openapi-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3152390Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-panache-common-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3158770Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.arc.arc-processor-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3206588Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-rest-common-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3210363Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-agroal-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3214028Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-kubernetes-spi-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3216597Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-logging-json-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3218954Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-vertx-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3222023Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-jackson-spi-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3224018Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/jakarta.servlet.jakarta.servlet-api-6.0.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3248299Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-credentials-deployment-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3250030Z keycloak-999.0.0-SNAPSHOT/lib/lib/deployment/io.quarkus.quarkus-arc-test-supplement-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3251513Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/io.smallrye.common.smallrye-common-net-2.16.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3252991Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/io.smallrye.common.smallrye-common-cpu-2.16.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3254914Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/org.crac.crac-1.5.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3256179Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/io.quarkus.quarkus-classloader-commons-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3257978Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/io.smallrye.common.smallrye-common-constraint-2.16.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3259212Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/io.smallrye.common.smallrye-common-ref-2.16.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3260420Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/io.smallrye.common.smallrye-common-os-2.16.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3261523Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/org.jboss.logging.jboss-logging-3.6.2.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3265861Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/io.quarkus.quarkus-value-registry-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3268752Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/io.smallrye.common.smallrye-common-expression-2.16.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3270037Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/io.quarkus.quarkus-vertx-latebound-mdc-provider-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3271193Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/jakarta.json.jakarta.json-api-2.1.3.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3272427Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/io.smallrye.common.smallrye-common-io-2.16.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3276092Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/io.quarkus.quarkus-bootstrap-runner-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3286026Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/org.eclipse.parsson.parsson-1.1.7.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3296002Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/io.smallrye.common.smallrye-common-function-2.16.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3298182Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/io.quarkus.quarkus-development-mode-spi-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3303073Z keycloak-999.0.0-SNAPSHOT/lib/lib/boot/org.jboss.logmanager.jboss-logmanager-3.2.1.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3359185Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.vertx.vertx-bridge-common-4.5.25.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3361984Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-netty-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3367130Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-x500-cert-2.8.3.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3370506Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-sssd-federation-999.0.0-SNAPSHOT.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3396273Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.fasterxml.jackson.dataformat.jackson-dataformat-cbor-2.21.2.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3403133Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.reactive.smallrye-mutiny-vertx-auth-common-3.21.5.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3404520Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.fasterxml.jackson.jakarta.rs.jackson-jakarta-rs-base-2.21.2.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3409828Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.netty.netty-transport-native-unix-common-4.1.130.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3412736Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.micrometer.micrometer-registry-prometheus-simpleclient-1.16.3.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3417616Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.google.code.gson.gson-2.13.2.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3437143Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.fasterxml.jackson.jakarta.rs.jackson-jakarta-rs-yaml-provider-2.21.2.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3439647Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.resteasy.reactive.resteasy-reactive-common-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3462423Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.jboss.logging.commons-logging-jboss-logging-2.0.0.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3465157Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.eclipse.angus.angus-mail-2.0.5.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3499768Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.googlecode.owasp-java-html-sanitizer.owasp-java-html-sanitizer-20260101.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3516132Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-core-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3552845Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.twitter4j.twitter4j-core-4.1.2.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3577038Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.antlr.antlr4-runtime-4.13.2.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3601227Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-virtual-threads-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3605211Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.eclipse.microprofile.reactive-streams-operators.microprofile-reactive-streams-operators-api-3.0.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3609508Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-model-jpa-999.0.0-SNAPSHOT.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3666407Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.vertx.vertx-web-4.5.25.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.3694659Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.bouncycastle.bcprov-jdk18on-1.83.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4247719Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-sasl-gs2-2.8.3.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4250505Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.fasterxml.jackson.core.jackson-annotations-2.21.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4254513Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-util-2.8.3.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4257942Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.bouncycastle.bcutil-jdk18on-1.83.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4307412Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.bouncycastle.bcpkix-jdk18on-1.83.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4386830Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.grpc.grpc-protobuf-lite-1.79.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4389038Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-transaction-annotations-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4390466Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.opentelemetry-api-incubator-1.57.0-alpha.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4395815Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.liquibase.liquibase-core-4.33.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4621217Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.ow2.asm.asm-analysis-9.9.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4623086Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.config.smallrye-config-validator-3.16.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4625129Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.prometheus.simpleclient_common-0.16.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4629518Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-x500-cert-util-2.8.3.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4630658Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.arc.arc-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4647403Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-crypto-default-999.0.0-SNAPSHOT.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4652406Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.fasterxml.jackson.module.jackson-module-jakarta-xmlbind-annotations-2.21.2.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4658765Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.instrumentation.opentelemetry-micrometer-1.5-2.23.0-alpha.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4660660Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.instrumentation.opentelemetry-instrumentation-annotations-support-2.23.0-alpha.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4662184Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.netty.netty-handler-4.1.130.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4701760Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.micrometer.micrometer-observation-1.16.3.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4709017Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-server-spi-private-999.0.0-SNAPSHOT.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4772819Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.reactive.smallrye-mutiny-vertx-web-common-3.21.5.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4775675Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.config.smallrye-config-source-keystore-3.16.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4777829Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.smallrye-open-api-core-4.2.4.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4819900Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.vertx.vertx-auth-common-4.5.25.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4829657Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-model-storage-999.0.0-SNAPSHOT.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4834421Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.glassfish.expressly.expressly-6.0.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4846616Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-jsonp-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4848350Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.grpc.grpc-netty-1.79.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4870502Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.reactive.smallrye-mutiny-vertx-bridge-common-3.21.5.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4873233Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.smallrye-context-propagation-2.3.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4877359Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.grpc.grpc-util-1.79.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4884857Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-model-storage-private-999.0.0-SNAPSHOT.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4903087Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.netty.netty-common-4.1.130.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4954426Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.instrumentation.opentelemetry-jdbc-2.23.0-alpha.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.4961432Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.postgresql.postgresql-42.7.10.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5041949Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.prometheus.simpleclient-0.16.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5049301Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.hibernate.local-cache.quarkus-local-cache-0.5.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5054322Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-jdbc-mysql-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5055685Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.h2database.h2-2.4.240.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5244690Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-mechanism-gssapi-2.8.3.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5249335Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-quarkus-server-999.0.0-SNAPSHOT.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5274373Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.opentelemetry-exporter-otlp-1.57.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5281470Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.aayushatharva.brotli4j.service-1.16.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5283275Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-micrometer-opentelemetry-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5285054Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-logging-json-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5286439Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.fasterxml.jackson.dataformat.jackson-dataformat-yaml-2.21.2.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5288865Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-security-manager-action-2.8.3.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5291597Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-mechanism-oauth2-2.8.3.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5292831Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.netty.netty-codec-4.1.130.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5318878Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.infinispan.infinispan-multimap-16.0.8.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5337323Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.opentelemetry-common-1.57.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5339193Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.semconv.opentelemetry-semconv-incubating-1.37.0-alpha.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5348640Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.infinispan.infinispan-cachestore-remote-16.0.8.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5360972Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.reactivestreams.reactive-streams-1.0.4.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5363072Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/jakarta.persistence.jakarta.persistence-api-3.2.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5374971Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.opentelemetry-sdk-metrics-1.57.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5397833Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-smallrye-health-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5400352Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.agroal.agroal-api-3.0.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5405380Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-common-999.0.0-SNAPSHOT.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5419630Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.ow2.asm.asm-9.9.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5428828Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.freemarker.freemarker-2.3.32.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5550662Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-scim-model-999.0.0-SNAPSHOT.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5555222Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.common.smallrye-common-vertx-context-2.16.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5557968Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.infinispan.protostream.protostream-types-6.0.6.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5568527Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/jakarta.interceptor.jakarta.interceptor-api-2.2.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5570406Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.agroal.agroal-narayana-3.0.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5572116Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.hdrhistogram.HdrHistogram-2.2.2.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5585201Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.opentelemetry-context-1.57.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5588057Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.openjdk.nashorn.nashorn-core-15.4.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5738600Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.sun.istack.istack-commons-runtime-3.0.10.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5740649Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.apache.commons.commons-lang3-3.20.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5791793Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/jakarta.ws.rs.jakarta.ws.rs-api-3.1.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5803175Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/jakarta.validation.jakarta.validation-api-3.1.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.5810494Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-admin-ui-999.0.0-SNAPSHOT.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6154921Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.grpc.grpc-core-1.79.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6199906Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.opentelemetry-sdk-common-1.57.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6206752Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.jboss.threads.jboss-threads-3.9.2.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6217093Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.opentelemetry-exporter-common-1.57.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6226013Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.jboss.invocation.jboss-invocation-2.0.0.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6233324Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-jdbc-postgresql-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6235716Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/jakarta.activation.jakarta.activation-api-2.1.4.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6240736Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.apache.santuario.xmlsec-3.0.6.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6323596Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.ow2.asm.asm-commons-9.9.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6328384Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.vertx.vertx-grpc-4.5.25.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6333403Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.eclipse.microprofile.config.microprofile-config-api-3.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6334712Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.reactive.smallrye-mutiny-vertx-runtime-3.21.5.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6335991Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/jakarta.transaction.jakarta.transaction-api-2.0.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6338704Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.netty.netty-transport-classes-epoll-4.1.130.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6350104Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.netty.netty-codec-http2-4.1.130.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6385982Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-sasl-digest-2.8.3.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6387816Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.apache.commons.commons-collections4-4.5.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6449728Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-core-999.0.0-SNAPSHOT.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6491327Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.vertx.vertx-codegen-4.5.25.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6505414Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-ssl-2.8.3.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6516746Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.google.guava.guava-33.5.0-jre.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6726972Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.google.zxing.javase-3.4.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6731246Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.grpc.grpc-context-1.79.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6732283Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.glassfish.jaxb.txw2-4.0.6.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6735877Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.vertx.vertx-grpc-server-4.5.25.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6738400Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-hibernate-validator-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6743200Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.googlecode.owasp-java-html-sanitizer.java10-shim-20260101.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6744199Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.webauthn4j.webauthn4j-core-0.29.3.RELEASE.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6782427Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.certs.smallrye-private-key-pem-parser-0.9.2.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6784477Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-saml-core-public-999.0.0-SNAPSHOT.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6800915Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.netty.netty-handler-proxy-4.1.130.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6803314Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-ldap-federation-999.0.0-SNAPSHOT.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6826192Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.netty.netty-resolver-4.1.130.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6828781Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-jackson-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6830614Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-rest-jackson-common-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6833183Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.smallrye-fault-tolerance-vertx-6.10.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6834099Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.vertx.vertx-core-4.5.25.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6951739Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-smallrye-context-propagation-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6952978Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.apicatalog.titanium-json-ld-1.3.3.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6972890Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.smallrye-context-propagation-jta-2.3.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.6975124Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-account-ui-999.0.0-SNAPSHOT.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.7076325Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.webauthn4j.webauthn4j-util-0.29.3.RELEASE.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.7077700Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/commons-io.commons-io-2.21.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.7117694Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-rest-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.7126715Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-security-runtime-spi-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.7129402Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.opentelemetry-sdk-extension-autoconfigure-spi-1.57.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.7130481Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.infinispan.infinispan-commons-16.0.8.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.7188874Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.infinispan.infinispan-api-16.0.8.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.7198130Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-crypto-fips1402-999.0.0-SNAPSHOT.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.7202367Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-rest-common-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.7203618Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-scim-services-999.0.0-SNAPSHOT.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.7205101Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.opentelemetry-sdk-trace-1.57.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.7214667Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-mechanism-digest-2.8.3.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.7215704Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-narayana-jta-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.7221670Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.smallrye-health-api-4.3.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.7222592Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.apache.httpcomponents.httpclient-4.5.14.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.7276802Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.vertx.vertx-grpc-client-4.5.25.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.7279836Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.netty.netty-transport-native-epoll-4.1.130.Final-linux-aarch_64.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.7284212Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-hibernate-orm-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.7305474Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.glassfish.jaxb.jaxb-core-4.0.6.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.7314614Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.reactive.smallrye-mutiny-vertx-core-3.21.5.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.7339845Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.google.errorprone.error_prone_annotations-2.47.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.7341313Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.instrumentation.opentelemetry-instrumentation-api-incubator-2.23.0-alpha.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.7353454Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-model-storage-services-999.0.0-SNAPSHOT.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.7357963Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.hibernate.orm.hibernate-core-7.2.6.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8350737Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.glassfish.jaxb.jaxb-runtime-4.0.6.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8417387Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-admin-v2-api-999.0.0-SNAPSHOT.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8422408Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-sasl-gssapi-2.8.3.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8424897Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.resteasy.reactive.resteasy-reactive-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8468997Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-datasource-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8471231Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-credentials-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8472965Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.infinispan.infinispan-counter-api-16.0.8.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8475993Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.fasterxml.jackson.core.jackson-core-2.21.2.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8520039Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.common.wildfly-common-1.5.4.Final-format-001.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8543854Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/jakarta.enterprise.jakarta.enterprise.lang-model-4.1.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8546354Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.googlecode.owasp-java-html-sanitizer.java8-shim-20260101.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8549421Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.instrumentation.opentelemetry-runtime-telemetry-java8-2.23.0-alpha.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8550178Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.opencsv.opencsv-5.11.2.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8571979Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-jdbc-mssql-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8573273Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.locationtech.jts.jts-core-1.19.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8659434Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.vertx.vertx-web-common-4.5.25.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8661944Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.instrumentation.opentelemetry-apache-httpclient-4.3-2.23.0-alpha.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8663628Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.jboss.jboss-transaction-spi-8.0.0.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8666015Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.jspecify.jspecify-1.0.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8667432Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-sasl-plain-2.8.3.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8668747Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-jdbc-oracle-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8669641Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.smallrye-open-api-model-4.2.4.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8671071Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.apache.kerby.kerby-asn1-2.0.3.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8677967Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.jvnet.staxex.stax-ex-2.0.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8680307Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.netty.netty-resolver-dns-4.1.130.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8693359Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.eclipse.microprofile.health.microprofile-health-api-4.0.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8695200Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.vertx.utils.quarkus-vertx-utils-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8696527Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.instrumentation.opentelemetry-runtime-telemetry-java17-2.23.0-alpha.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8700660Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-keystore-2.8.3.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8704828Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.ow2.asm.asm-tree-9.9.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8707533Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-saml-core-999.0.0-SNAPSHOT.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8745160Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-asn1-2.8.3.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8747565Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-permission-2.8.3.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8752203Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.jboss.slf4j.slf4j-jboss-logmanager-2.0.2.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8754151Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.jgroups.jgroups-5.5.1.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8917634Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.opentelemetry-exporter-otlp-common-1.57.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8932980Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-auth-server-2.8.3.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8953369Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.apache.httpcomponents.httpcore-4.4.16.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8976742Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.netty.netty-codec-socks-4.1.130.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8985757Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.micrometer.micrometer-commons-1.16.3.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8988698Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.smallrye-context-propagation-api-2.3.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8991207Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-base-2.8.3.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8993506Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-jdbc-h2-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8994524Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-auth-2.8.3.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8996043Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-tls-registry-spi-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.8997227Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.netty.netty-codec-dns-4.1.130.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9001129Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.setl.rdf-urdna-1.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9003666Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-kerberos-federation-999.0.0-SNAPSHOT.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9004804Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.smallrye-context-propagation-storage-2.3.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9006330Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.instrumentation.opentelemetry-instrumentation-api-2.23.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9022290Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.latencyutils.LatencyUtils-2.0.3.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9024573Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.reactive.mutiny-3.1.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9088131Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.resteasy.reactive.resteasy-reactive-jackson-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9090302Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/jakarta.el.jakarta.el-api-6.0.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9095196Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.config.smallrye-config-common-3.16.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9097579Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/jakarta.enterprise.jakarta.enterprise.cdi-api-4.1.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9108986Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.micrometer.micrometer-core-1.16.3.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9172543Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-sasl-2.8.3.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9184145Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.sun.xml.messaging.saaj.saaj-impl-2.0.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9216108Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-x500-2.8.3.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9218313Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/jakarta.mail.jakarta.mail-api-2.1.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9235401Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-credential-2.8.3.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9244712Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.fasterxml.jackson.datatype.jackson-datatype-jsr310-2.21.2.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9256023Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/jakarta.resource.jakarta.resource-api-2.1.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9260734Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.netty.netty-codec-http-4.1.130.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9309322Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.eclipse.angus.angus-activation-2.0.3.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9310549Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.reactive.vertx-mutiny-generator-3.21.5.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9316871Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.instrumentation.opentelemetry-instrumentation-annotations-2.23.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9318080Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/jakarta.annotation.jakarta.annotation-api-3.0.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9319182Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-admin-v2-rest-999.0.0-SNAPSHOT.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9321630Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-caffeine-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9322603Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.smallrye-health-provided-checks-4.3.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9323541Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-jdbc-mariadb-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9324674Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-http-2.8.3.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9326338Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-scim-core-999.0.0-SNAPSHOT.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9335723Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-devservices-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9336885Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.aayushatharva.brotli4j.native-linux-x86_64-1.16.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9359423Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.hibernate.orm.hibernate-graalvm-7.2.6.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9361198Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.slf4j.slf4j-api-2.0.17.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9366302Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.infinispan.infinispan-client-hotrod-16.0.8.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9417346Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.common.smallrye-common-classloader-2.16.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9418256Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.github.ben-manes.caffeine.caffeine-3.2.3.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9478500Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.prometheus.simpleclient_tracer_common-0.16.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9480994Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.fasterxml.classmate-1.7.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9485263Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.grpc.grpc-stub-1.79.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9489708Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-opentelemetry-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9510164Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.mariadb.jdbc.mariadb-java-client-3.5.7.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9558052Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/info.picocli.picocli-4.7.7.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9584953Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-micrometer-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9599800Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.netty.netty-transport-native-epoll-4.1.130.Final-linux-x86_64.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9602034Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.aayushatharva.brotli4j.brotli4j-1.16.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9606254Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.config.smallrye-config-core-3.16.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9629798Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-grpc-common-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9631754Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-provider-util-2.8.3.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9632928Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-config-api-999.0.0-SNAPSHOT.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9638290Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.netty.netty-buffer-4.1.130.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9661480Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.config.smallrye-config-3.16.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9664020Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.hibernate.models.hibernate-models-1.0.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9678774Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.reactive.smallrye-mutiny-vertx-uri-template-3.21.5.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9680198Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.fasterxml.jackson.datatype.jackson-datatype-jdk8-2.21.2.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9681233Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.resteasy.reactive.resteasy-reactive-vertx-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9685361Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.prometheus.simpleclient_tracer_otel_agent-0.16.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9686157Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.jandex-3.5.3.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9710737Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-smallrye-openapi-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9714898Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.eclipse.microprofile.openapi.microprofile-openapi-api-4.1.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9721298Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.eclipse.microprofile.context-propagation.microprofile-context-propagation-api-1.3.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9723124Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/jakarta.xml.soap.jakarta.xml.soap-api-3.0.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9725842Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.ow2.asm.asm-util-9.9.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9732511Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-micrometer-registry-prometheus-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9733747Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.fasterxml.jackson.core.jackson-databind-2.21.2.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9838401Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.jboss.narayana.jts.narayana-jts-integration-7.3.3.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9842465Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-model-infinispan-999.0.0-SNAPSHOT.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9918580Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.prometheus.simpleclient_tracer_otel-0.16.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9919897Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.resteasy.reactive.resteasy-reactive-common-types-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9921100Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-mechanism-scram-2.8.3.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9922146Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.reactive.mutiny-smallrye-context-propagation-3.1.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:51.9923233Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/net.bytebuddy.byte-buddy-1.17.8.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.0473091Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.common.smallrye-common-annotation-2.16.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.0494030Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.hibernate.orm.hibernate-community-dialects-7.2.6.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.0527676Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.google.zxing.core-3.4.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.0568098Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-sasl-oauth2-2.8.3.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.0569343Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.agroal.agroal-pool-3.0.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.0577647Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-agroal-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.0582676Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.opentelemetry-sdk-extension-autoconfigure-1.57.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.0587116Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.grpc.grpc-protobuf-1.79.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.0588075Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/net.java.dev.jna.jna-5.8.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.0698617Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.reactivex.rxjava3.rxjava-3.1.12.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.0882385Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.security.quarkus-security-2.3.2.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.0884225Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-tls-registry-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.0889107Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-rest-jackson-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.0893516Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/jakarta.inject.jakarta.inject-api-2.0.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.0895921Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-server-spi-999.0.0-SNAPSHOT.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.0916963Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-reactive-routes-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.0921436Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.snakeyaml.snakeyaml-engine-2.6.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.0938326Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-vertx-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.0948702Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-swagger-ui-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.0949518Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.mysql.mysql-connector-j-9.6.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.1111744Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.opentelemetry-sdk-1.57.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.1112918Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.fasterxml.jackson.module.jackson-module-parameter-names-2.21.2.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.1114296Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.reactive.smallrye-reactive-converter-mutiny-3.0.3.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.1115533Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-sasl-scram-2.8.3.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.1116977Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-mechanism-2.8.3.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.1118836Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.reactive.smallrye-reactive-converter-api-3.0.3.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.1119970Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.reactive.smallrye-mutiny-vertx-web-3.21.5.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.1128400Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.jctools.jctools-core-4.0.5.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.1159004Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.semconv.opentelemetry-semconv-1.37.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.1160697Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.google.protobuf.protobuf-java-4.33.2.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.1280324Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-authz-policy-common-999.0.0-SNAPSHOT.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.1286492Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.hibernate.validator.hibernate-validator-9.1.0.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.1370013Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.microsoft.sqlserver.mssql-jdbc-13.2.1.jre11.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.1447606Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.netty.netty-codec-haproxy-4.1.130.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.1450031Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.google.api.grpc.proto-google-common-protos-2.65.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.1625333Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.jboss.narayana.jta.narayana-jta-7.3.3.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.1690403Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.infinispan.infinispan-core-16.0.8.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.2065427Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-themes-vendor-999.0.0-SNAPSHOT.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.2853084Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.netty.netty-transport-4.1.130.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.2889989Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-ipatuura-federation-999.0.0-SNAPSHOT.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.2891680Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.perfmark.perfmark-api-0.27.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.2892780Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.smallrye-health-4.3.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.2894591Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-datasource-common-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.2896664Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.yaml.snakeyaml-2.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.2920189Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-sasl-external-2.8.3.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.2921203Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-mutiny-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.2922337Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.grpc.grpc-api-1.79.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.2946043Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.opentelemetry-api-1.57.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.2957380Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.opentelemetry.opentelemetry-sdk-logs-1.57.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.2962090Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-websockets-next-spi-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.2963133Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-services-999.0.0-SNAPSHOT.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.3265752Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/com.github.ua-parser.uap-java-1.6.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.3269622Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/commons-codec.commons-codec-1.21.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.3298935Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/jakarta.xml.bind.jakarta.xml.bind-api-4.0.5.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.3305745Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-rest-admin-ui-ext-999.0.0-SNAPSHOT.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.3309912Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.keycloak.keycloak-themes-999.0.0-SNAPSHOT.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.3378157Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-vertx-http-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.3424484Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.infinispan.protostream.protostream-6.0.6.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.3460176Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-arc-3.33.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.3464268Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.smallrye.reactive.mutiny-zero-flow-adapters-1.1.1.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.3465590Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.quarkus.quarkus-fs-util-1.3.0.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.3467076Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/org.wildfly.security.wildfly-elytron-password-impl-2.8.3.Final.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.3473360Z keycloak-999.0.0-SNAPSHOT/lib/lib/main/io.vertx.vertx-grpc-common-4.5.25.jar
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.3476047Z keycloak-999.0.0-SNAPSHOT/conf/keycloak.conf
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.3477298Z keycloak-999.0.0-SNAPSHOT/conf/README.md
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.3477800Z keycloak-999.0.0-SNAPSHOT/conf/truststores/
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:52:52.3478310Z keycloak-999.0.0-SNAPSHOT/LICENSE.txt
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:22.4868273Z Prepare all required actions
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:22.4868855Z Getting action download info
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:22.7156965Z Download action repository 'actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:22.8200080Z ##[group]Run ./.github/actions/pnpm-setup
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:22.8200360Z with:
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:22.8200536Z   node-version: 24
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:22.8200709Z env:
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:22.8200976Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:22.8201348Z   WORKSPACE: @keycloak/keycloak-admin-client
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:22.8201610Z   RETRY_COUNT: 3
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:22.8201904Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.2-10/x64
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:22.8202356Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.2-10/x64
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:22.8202703Z ##[endgroup]
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:22.8246151Z ##[group]Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:22.8246521Z with:
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:22.8246916Z   node-version: 24
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:22.8247117Z   check-latest: true
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:22.8247516Z   always-auth: false
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:22.8247836Z   token: ***
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:22.8248007Z env:
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:22.8248274Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:22.8248644Z   WORKSPACE: @keycloak/keycloak-admin-client
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:22.8248906Z   RETRY_COUNT: 3
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:22.8249191Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.2-10/x64
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:22.8249643Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.2-10/x64
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:22.8249987Z ##[endgroup]
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:22.9942608Z Attempt to resolve the latest version from manifest...
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:23.5167142Z Resolved as '24.14.1'
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:23.5190345Z Found in cache @ /opt/hostedtoolcache/node/24.14.1/x64
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:23.5196300Z ##[group]Environment details
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:23.8162025Z node: v24.14.1
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:23.8162265Z npm: 11.11.0
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:23.8162465Z yarn: 1.22.22
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:23.8163407Z ##[endgroup]
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:23.8329261Z Prepare all required actions
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:23.8329570Z Getting action download info
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.0210447Z Download action repository 'actions/cache@5a3ec84eff668545956fd18022155c47e93e2684' (SHA:5a3ec84eff668545956fd18022155c47e93e2684)
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.1971639Z ##[group]Run ./.github/actions/corepack-setup
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.1971906Z env:
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.1972190Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.1972579Z   WORKSPACE: @keycloak/keycloak-admin-client
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.1972846Z   RETRY_COUNT: 3
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.1973135Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.2-10/x64
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.1973596Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.2-10/x64
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.1973975Z ##[endgroup]
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.1990240Z ##[group]Run corepack enable
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.1990479Z [36;1mcorepack enable[0m
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.2021247Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.2021602Z env:
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.2021877Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.2022252Z   WORKSPACE: @keycloak/keycloak-admin-client
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.2022512Z   RETRY_COUNT: 3
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.2022806Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.2-10/x64
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.2023265Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.2-10/x64
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.2023620Z ##[endgroup]
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.3039734Z ##[group]Run echo "key=corepack-tools-$(jq -r '.packageManager' package.json)" >> $GITHUB_OUTPUT
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.3040390Z [36;1mecho "key=corepack-tools-$(jq -r '.packageManager' package.json)" >> $GITHUB_OUTPUT[0m
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.3067542Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.3067887Z env:
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.3068163Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.3068565Z   WORKSPACE: @keycloak/keycloak-admin-client
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.3068831Z   RETRY_COUNT: 3
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.3069119Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.2-10/x64
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.3069582Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.2-10/x64
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.3069944Z ##[endgroup]
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.3227268Z ##[group]Run actions/cache@5a3ec84eff668545956fd18022155c47e93e2684
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.3227595Z with:
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.3227771Z   path: ./js/corepack.tgz
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.3228497Z   key: Linux-corepack-tools-pnpm@10.14.0+sha512.ad27a79641b49c3e481a16a805baa71817a04bbe06a38d17e60e2eaee83f6a146c6a688125f5792e48dd5ba30e7da52a5cda4c3992b9ccf333f9ce223af84748
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.3229256Z   enableCrossOsArchive: false
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.3229484Z   fail-on-cache-miss: false
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.3229702Z   lookup-only: false
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.3229895Z   save-always: false
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.3230074Z env:
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.3230521Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.3230884Z   WORKSPACE: @keycloak/keycloak-admin-client
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.3231141Z   RETRY_COUNT: 3
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.3231430Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.2-10/x64
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.3231885Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.2-10/x64
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.3232229Z ##[endgroup]
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:24.7330355Z Cache hit for: Linux-corepack-tools-pnpm@10.14.0+sha512.ad27a79641b49c3e481a16a805baa71817a04bbe06a38d17e60e2eaee83f6a146c6a688125f5792e48dd5ba30e7da52a5cda4c3992b9ccf333f9ce223af84748
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:26.0452641Z Received 156736 of 4351040 (3.6%), 0.1 MBs/sec
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:26.2132023Z Received 4351040 of 4351040 (100.0%), 3.6 MBs/sec
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:26.2132686Z Cache Size: ~4 MB (4351040 B)
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:26.2167945Z [command]/usr/bin/tar -xf /home/runner/work/_temp/1e654a9c-ff40-4e60-a3f1-dd5933b06b22/cache.tzst -P -C /home/runner/work/keycloak/keycloak --use-compress-program unzstd
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:26.2275408Z Cache restored successfully
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:26.2359460Z Cache restored from key: Linux-corepack-tools-pnpm@10.14.0+sha512.ad27a79641b49c3e481a16a805baa71817a04bbe06a38d17e60e2eaee83f6a146c6a688125f5792e48dd5ba30e7da52a5cda4c3992b9ccf333f9ce223af84748
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:26.2439239Z ##[group]Run corepack install -g --cache-only ./corepack.tgz
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:26.2439654Z [36;1mcorepack install -g --cache-only ./corepack.tgz[0m
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:26.2467477Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:26.2467813Z env:
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:26.2468093Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:26.2468483Z   WORKSPACE: @keycloak/keycloak-admin-client
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:26.2468748Z   RETRY_COUNT: 3
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:26.2469072Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.2-10/x64
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:26.2469533Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.2-10/x64
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:26.2469906Z ##[endgroup]
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:26.3862459Z Adding pnpm@10.14.0 to the cache...
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:27.5883972Z Prepare all required actions
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:27.5884288Z Getting action download info
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:27.8085313Z ##[group]Run ./.github/actions/pnpm-store-cache
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:27.8085845Z env:
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:27.8086336Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:27.8087310Z   WORKSPACE: @keycloak/keycloak-admin-client
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:27.8087819Z   RETRY_COUNT: 3
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:27.8088368Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.2-10/x64
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:27.8089248Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.2-10/x64
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:27.8089902Z ##[endgroup]
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:27.8113683Z ##[group]Run echo "key=pnpm-store-`date -u "+%Y-%U"`" >> $GITHUB_OUTPUT
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:27.8114551Z [36;1mecho "key=pnpm-store-`date -u "+%Y-%U"`" >> $GITHUB_OUTPUT[0m
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:27.8153874Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:27.8154423Z env:
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:27.8154881Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:27.8155594Z   WORKSPACE: @keycloak/keycloak-admin-client
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:27.8156082Z   RETRY_COUNT: 3
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:27.8156613Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.2-10/x64
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:27.8157695Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.2-10/x64
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:27.8158360Z ##[endgroup]
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:27.8274741Z ##[group]Run actions/cache@5a3ec84eff668545956fd18022155c47e93e2684
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:27.8275068Z with:
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:27.8275390Z   path: ~/.local/share/pnpm/store
+Keycloak Admin Client	UNKNOWN STEP	~/AppData/Local/pnpm/store
+Keycloak Admin Client	UNKNOWN STEP	~/Library/pnpm/store
+Keycloak Admin Client	UNKNOWN STEP	
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:27.8275818Z   key: Linux-pnpm-store-2026-14
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:27.8276069Z   enableCrossOsArchive: false
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:27.8276306Z   fail-on-cache-miss: false
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:27.8276688Z   lookup-only: false
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:27.8277264Z   save-always: false
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:27.8277451Z env:
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:27.8277734Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:27.8278117Z   WORKSPACE: @keycloak/keycloak-admin-client
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:27.8278384Z   RETRY_COUNT: 3
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:27.8278682Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.2-10/x64
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:27.8279147Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.2-10/x64
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:27.8279500Z ##[endgroup]
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:28.2183358Z Cache hit for: Linux-pnpm-store-2026-14
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:29.5459683Z Received 0 of 138034068 (0.0%), 0.0 MBs/sec
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:30.5506550Z Received 104857600 of 138034068 (76.0%), 49.9 MBs/sec
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:30.8922847Z Received 138034068 of 138034068 (100.0%), 56.1 MBs/sec
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:30.8925040Z Cache Size: ~132 MB (138034068 B)
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:30.8971152Z [command]/usr/bin/tar -xf /home/runner/work/_temp/7739dd85-ed3b-483e-b088-4da5f07d54dc/cache.tzst -P -C /home/runner/work/keycloak/keycloak --use-compress-program unzstd
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:33.6097162Z Cache restored successfully
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:33.6237368Z Cache restored from key: Linux-pnpm-store-2026-14
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:33.6340870Z ##[group]Run pnpm install --prefer-offline --frozen-lockfile
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:33.6341305Z [36;1mpnpm install --prefer-offline --frozen-lockfile[0m
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:33.6368483Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:33.6368822Z env:
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:33.6369110Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:33.6369542Z   WORKSPACE: @keycloak/keycloak-admin-client
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:33.6369810Z   RETRY_COUNT: 3
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:33.6370125Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.2-10/x64
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:33.6370619Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/25.0.2-10/x64
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:33.6371001Z ##[endgroup]
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:34.0570951Z Scope: all 8 workspace projects
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:34.1068513Z Lockfile is up to date, resolution step is skipped
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:34.1700655Z Progress: resolved 1, reused 0, downloaded 0, added 0
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:34.3018055Z Packages: +915
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:34.3018765Z ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:35.1738314Z Progress: resolved 915, reused 900, downloaded 7, added 4
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:36.1720961Z Progress: resolved 915, reused 900, downloaded 10, added 506
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:36.9477769Z Progress: resolved 915, reused 900, downloaded 10, added 915, done
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:37.4944035Z .../esbuild@0.27.7/node_modules/esbuild postinstall$ node install.js
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:37.5496667Z .../esbuild@0.27.7/node_modules/esbuild postinstall: Done
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:37.7710748Z 
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:37.7712887Z devDependencies:
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:37.7713398Z + @eslint/compat 2.0.0
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:37.7713895Z + @eslint/eslintrc 3.3.3
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:37.7714333Z + @eslint/js 9.39.2
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:37.7714928Z + @types/node 25.0.3
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:37.7715327Z + eslint 9.39.2
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:37.7715804Z + eslint-config-prettier 10.1.8
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:37.7716329Z + eslint-plugin-lodash 8.0.0
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:37.7717227Z + eslint-plugin-playwright 2.4.0
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:37.7717833Z + eslint-plugin-prettier 5.5.4
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:37.7718336Z + eslint-plugin-react 7.37.5
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:37.7718922Z + eslint-plugin-react-compiler 19.1.0-rc.2
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:37.7719547Z + eslint-plugin-react-hooks 6.1.0
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:37.7720026Z + husky 9.1.7
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:37.7720399Z + lint-staged 16.4.0
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:37.7720790Z + prettier 3.6.2
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:37.7721155Z + tslib 2.8.1
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:37.7721521Z + typescript 5.9.3
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:37.7721963Z + typescript-eslint 8.42.0
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:37.7722386Z + wireit 0.14.12
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:37.7722609Z 
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:37.7994513Z libs/keycloak-admin-client postinstall$ pnpm generate:openapi
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:37.8069935Z . prepare$ cd .. && husky js/.husky
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:37.8678200Z . prepare: Done
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.1152545Z libs/keycloak-admin-client postinstall: > @keycloak/keycloak-admin-client@999.0.0-SNAPSHOT generate:openapi /home/runner/work/keycloak/keycloak/js/libs/keycloak-admin-client
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.1157313Z libs/keycloak-admin-client postinstall: > wireit
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.2233380Z libs/keycloak-admin-client postinstall: Analyzing
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.4182663Z libs/keycloak-admin-client postinstall: Request Failed.
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.4184940Z libs/keycloak-admin-client postinstall: Status Code: 403
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.4197670Z libs/keycloak-admin-client postinstall: Error: Request Failed.
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.4199010Z libs/keycloak-admin-client postinstall: Status Code: 403
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.4204616Z libs/keycloak-admin-client postinstall:     at RedirectableRequest.<anonymous> (/home/runner/work/keycloak/keycloak/js/node_modules/.pnpm/@kiota-community+kiota-gen@1.0.2/node_modules/@kiota-community/kiota-gen/bin/kiota.js:70:31)
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.4215588Z libs/keycloak-admin-client postinstall:     at RedirectableRequest.emit (node:events:508:28)
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.4218259Z libs/keycloak-admin-client postinstall:     at RedirectableRequest._processResponse (/home/runner/work/keycloak/keycloak/js/node_modules/.pnpm/follow-redirects@1.15.9/node_modules/follow-redirects/index.js:409:10)
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.4221388Z libs/keycloak-admin-client postinstall:     at RedirectableRequest._onNativeResponse (/home/runner/work/keycloak/keycloak/js/node_modules/.pnpm/follow-redirects@1.15.9/node_modules/follow-redirects/index.js:102:12)
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.4227664Z libs/keycloak-admin-client postinstall:     at Object.onceWrapper (node:events:623:26)
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.4228941Z libs/keycloak-admin-client postinstall:     at ClientRequest.emit (node:events:508:28)
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.4230382Z libs/keycloak-admin-client postinstall:     at HTTPParser.parserOnIncomingClient (node:_http_client:780:27)
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.4231948Z libs/keycloak-admin-client postinstall:     at HTTPParser.parserOnHeadersComplete (node:_http_common:125:17)
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.4233475Z libs/keycloak-admin-client postinstall:     at TLSSocket.socketOnData (node:_http_client:615:22)
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.4234716Z libs/keycloak-admin-client postinstall:     at TLSSocket.emit (node:events:508:28)
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.4259363Z libs/keycloak-admin-client postinstall: ❌ [generate:openapi] exited with exit code 1.
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.4262321Z libs/keycloak-admin-client postinstall: ❌ 1 script failed.
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.4442875Z libs/keycloak-admin-client postinstall:  ELIFECYCLE  Command failed with exit code 1.
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.4649797Z libs/keycloak-admin-client postinstall: Failed
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.4816490Z  ELIFECYCLE  Command failed with exit code 1.
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.5432712Z ##[error]Process completed with exit code 1.
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.5545022Z Post job cleanup.
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.5587359Z Post job cleanup.
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.5632329Z Post job cleanup.
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.7004370Z Post job cleanup.
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.7950393Z [command]/usr/bin/git version
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.7997713Z git version 2.53.0
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.8039109Z Temporarily overriding HOME='/home/runner/work/_temp/cb0c62ef-598e-45fd-b674-6af4dcc20b5d' before making global git config changes
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.8040933Z Adding repository directory to the temporary git global config as a safe directory
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.8046176Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/keycloak/keycloak
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.8082133Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.8114329Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.8343703Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.8366424Z http.https://github.com/.extraheader
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.8377298Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.8408588Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.8766307Z Cleaning up orphan processes
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.9144868Z Terminate orphan process: pid (2312) (java)
+Keycloak Admin Client	UNKNOWN STEP	2026-04-09T04:53:38.9161233Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/cache@5a3ec84eff668545956fd18022155c47e93e2684, actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020. Actions will be forced to run with Node.js 24 by default starting June 2nd, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	﻿2026-04-09T05:18:46.6343875Z Current runner version: '2.333.1'
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:46.6369543Z ##[group]Runner Image Provisioner
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:46.6370317Z Hosted Compute Agent
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:46.6371002Z Version: 20260213.493
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:46.6371594Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:46.6372300Z Build Date: 2026-02-13T00:28:41Z
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:46.6372919Z Worker ID: {d216b2e5-0e12-4706-9273-119a0b1bc541}
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:46.6373690Z Azure Region: westcentralus
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:46.6374232Z ##[endgroup]
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:46.6375469Z ##[group]Operating System
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:46.6376149Z Ubuntu
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:46.6376594Z 24.04.4
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:46.6377049Z LTS
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:46.6377544Z ##[endgroup]
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:46.6378392Z ##[group]Runner Image
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:46.6378936Z Image: ubuntu-24.04
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:46.6379512Z Version: 20260329.72.1
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:46.6380693Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260329.72/images/ubuntu/Ubuntu2404-Readme.md
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:46.6382209Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260329.72
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:46.6383056Z ##[endgroup]
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:46.6384096Z ##[group]GITHUB_TOKEN Permissions
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:46.6385959Z Contents: read
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:46.6386458Z Metadata: read
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:46.6387042Z ##[endgroup]
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:46.6389755Z Secret source: Actions
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:46.6390415Z Prepare workflow directory
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:46.6804463Z Prepare all required actions
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:46.6842434Z Getting action download info
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.0262954Z Download action repository 'actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8' (SHA:08c6903cd8c0fde910a37f88322edcfb5dd907a8)
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.3375277Z Complete job name: Status Check - Keycloak JavaScript CI
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.4128382Z ##[group]Run actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.4129369Z with:
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.4129762Z   repository: keycloak/keycloak
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.4130469Z   token: ***
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.4130852Z   ssh-strict: true
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.4131232Z   ssh-user: git
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.4131625Z   persist-credentials: true
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.4132053Z   clean: true
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.4132433Z   sparse-checkout-cone-mode: true
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.4132892Z   fetch-depth: 1
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.4133258Z   fetch-tags: false
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.4133645Z   show-progress: true
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.4134033Z   lfs: false
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.4134388Z   submodules: false
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.4134776Z   set-safe-directory: true
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.4135355Z env:
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.4135874Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.4136493Z ##[endgroup]
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5096340Z Syncing repository: keycloak/keycloak
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5098858Z ##[group]Getting Git version info
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5099543Z Working directory is '/home/runner/work/keycloak/keycloak'
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5100532Z [command]/usr/bin/git version
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5114790Z git version 2.53.0
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5165932Z ##[endgroup]
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5180009Z Temporarily overriding HOME='/home/runner/work/_temp/99c21e85-4350-493b-b4d1-f3e6eb8c4870' before making global git config changes
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5181667Z Adding repository directory to the temporary git global config as a safe directory
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5184371Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/keycloak/keycloak
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5218292Z Deleting the contents of '/home/runner/work/keycloak/keycloak'
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5222139Z ##[group]Initializing the repository
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5226553Z [command]/usr/bin/git init /home/runner/work/keycloak/keycloak
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5286899Z hint: Using 'master' as the name for the initial branch. This default branch name
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5288554Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5289967Z hint: to use in all of your new repositories, which will suppress this warning,
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5291681Z hint: call:
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5292251Z hint:
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5292981Z hint: 	git config --global init.defaultBranch <name>
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5293895Z hint:
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5294749Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5296151Z hint: 'development'. The just-created branch can be renamed via this command:
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5297232Z hint:
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5298032Z hint: 	git branch -m <name>
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5298730Z hint:
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5299711Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5301237Z Initialized empty Git repository in /home/runner/work/keycloak/keycloak/.git/
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5303586Z [command]/usr/bin/git remote add origin https://github.com/keycloak/keycloak
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5331885Z ##[endgroup]
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5332952Z ##[group]Disabling automatic garbage collection
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5336301Z [command]/usr/bin/git config --local gc.auto 0
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5365383Z ##[endgroup]
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5366392Z ##[group]Setting up auth
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5372393Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5404177Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5699541Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5730880Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5959718Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5995799Z ##[endgroup]
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.5996818Z ##[group]Fetching the repository
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:47.6005345Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +5183e49a8f9bce20a690c6f80b438cf9d4f6c80f:refs/remotes/origin/main
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:51.9989658Z From https://github.com/keycloak/keycloak
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:51.9991380Z  * [new ref]         5183e49a8f9bce20a690c6f80b438cf9d4f6c80f -> origin/main
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.0015475Z ##[endgroup]
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.0016639Z ##[group]Determining the checkout info
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.0018429Z ##[endgroup]
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.0023411Z [command]/usr/bin/git sparse-checkout disable
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.0061922Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.0088498Z ##[group]Checking out the ref
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.0092280Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9306802Z Switched to a new branch 'main'
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9308750Z branch 'main' set up to track 'origin/main'.
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9344568Z ##[endgroup]
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9387022Z [command]/usr/bin/git log -1 --format=%H
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9411022Z 5183e49a8f9bce20a690c6f80b438cf9d4f6c80f
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9704884Z Prepare all required actions
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9814902Z ##[group]Run ./.github/actions/status-check
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9816029Z with:
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9823255Z   jobs: {
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  "conditional": {
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "result": "success",
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "outputs": {
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	      "js-ci": "true"
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    }
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  },
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  "build-keycloak": {
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "result": "success",
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "outputs": {}
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  },
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  "admin-client": {
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "result": "success",
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "outputs": {}
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  },
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  "ui-shared": {
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "result": "success",
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "outputs": {}
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  },
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  "account-ui": {
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "result": "success",
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "outputs": {}
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  },
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  "account-ui-e2e": {
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "result": "success",
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "outputs": {}
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  },
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  "admin-ui": {
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "result": "success",
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "outputs": {}
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  },
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  "admin-ui-e2e": {
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "result": "success",
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "outputs": {}
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  },
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  "keycloak-admin-client": {
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "result": "failure",
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "outputs": {}
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  }
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	}
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9830979Z env:
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9832067Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9833459Z ##[endgroup]
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9955964Z ##[group]Run JOBS='{
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9956947Z [36;1mJOBS='{[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9957754Z [36;1m  "conditional": {[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9959139Z [36;1m    "result": "success",[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9960140Z [36;1m    "outputs": {[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9961046Z [36;1m      "js-ci": "true"[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9961962Z [36;1m    }[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9962697Z [36;1m  },[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9963475Z [36;1m  "build-keycloak": {[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9964463Z [36;1m    "result": "success",[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9965439Z [36;1m    "outputs": {}[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9966298Z [36;1m  },[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9967049Z [36;1m  "admin-client": {[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9968080Z [36;1m    "result": "success",[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9969082Z [36;1m    "outputs": {}[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9969934Z [36;1m  },[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9970654Z [36;1m  "ui-shared": {[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9971541Z [36;1m    "result": "success",[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9972499Z [36;1m    "outputs": {}[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9973321Z [36;1m  },[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9974037Z [36;1m  "account-ui": {[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9974915Z [36;1m    "result": "success",[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9975855Z [36;1m    "outputs": {}[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9976686Z [36;1m  },[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9977412Z [36;1m  "account-ui-e2e": {[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9978448Z [36;1m    "result": "success",[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9979397Z [36;1m    "outputs": {}[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9980219Z [36;1m  },[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9980930Z [36;1m  "admin-ui": {[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9981775Z [36;1m    "result": "success",[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9982694Z [36;1m    "outputs": {}[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9983515Z [36;1m  },[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9984235Z [36;1m  "admin-ui-e2e": {[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9985118Z [36;1m    "result": "success",[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9986052Z [36;1m    "outputs": {}[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9986861Z [36;1m  },[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9987705Z [36;1m  "keycloak-admin-client": {[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9988821Z [36;1m    "result": "failure",[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9989762Z [36;1m    "outputs": {}[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9990576Z [36;1m  }[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9991238Z [36;1m}'[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9991895Z [36;1m[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9992575Z [36;1mecho "Job status:"[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9993853Z [36;1mecho $JOBS | jq -r 'to_entries[] | " - \(.key): \(.value.result)"'[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9995209Z [36;1m[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9996236Z [36;1mfor i in $(echo $JOBS | jq -r 'to_entries[] | .value.result'); do[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9997979Z [36;1m  if [ "$i" != "success" ] && [ "$i" != "skipped" ]; then[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:52.9999298Z [36;1m    echo ""[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:53.0000144Z [36;1m    echo "Status check not okay!"[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:53.0001169Z [36;1m    exit 1[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:53.0001919Z [36;1m  fi[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:53.0002588Z [36;1mdone[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:53.0037231Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:53.0038891Z env:
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:53.0039908Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:53.0041237Z ##[endgroup]
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:53.0121086Z Job status:
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:53.0152273Z  - conditional: success
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:53.0153188Z  - build-keycloak: success
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:53.0154079Z  - admin-client: success
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:53.0154934Z  - ui-shared: success
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:53.0155725Z  - account-ui: success
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:53.0156540Z  - account-ui-e2e: success
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:53.0157385Z  - admin-ui: success
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:53.0158366Z  - admin-ui-e2e: success
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:53.0159435Z  - keycloak-admin-client: failure
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:53.0189319Z 
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:53.0189928Z Status check not okay!
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:53.0203471Z ##[error]Process completed with exit code 1.
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:53.0429055Z Post job cleanup.
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:53.1226586Z [command]/usr/bin/git version
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:53.1263447Z git version 2.53.0
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:53.1298366Z Temporarily overriding HOME='/home/runner/work/_temp/6aaca870-6089-4ca3-a028-cd227a70df4c' before making global git config changes
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:53.1301260Z Adding repository directory to the temporary git global config as a safe directory
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:53.1304472Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/keycloak/keycloak
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:53.1339538Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:53.1373282Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:53.1650948Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:53.1673223Z http.https://github.com/.extraheader
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:53.1684950Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:53.1720993Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-09T05:18:53.2110884Z Cleaning up orphan processes

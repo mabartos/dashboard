@@ -1,0 +1,551 @@
+Account UI E2E (chromium)	UNKNOWN STEP	﻿2026-04-12T05:08:36.0062217Z Current runner version: '2.333.1'
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:36.0101809Z ##[group]Runner Image Provisioner
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:36.0103005Z Hosted Compute Agent
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:36.0103731Z Version: 20260213.493
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:36.0104791Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:36.0105777Z Build Date: 2026-02-13T00:28:41Z
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:36.0106721Z Worker ID: {69665936-4cec-4a59-9790-3e8be8fbd701}
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:36.0107938Z Azure Region: eastus
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:36.0108684Z ##[endgroup]
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:36.0111228Z ##[group]Operating System
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:36.0112089Z Ubuntu
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:36.0112757Z 24.04.4
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:36.0113364Z LTS
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:36.0114207Z ##[endgroup]
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:36.0114903Z ##[group]Runner Image
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:36.0115684Z Image: ubuntu-24.04
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:36.0116562Z Version: 20260406.80.1
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:36.0118355Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260406.80/images/ubuntu/Ubuntu2404-Readme.md
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:36.0121112Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260406.80
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:36.0122546Z ##[endgroup]
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:36.0124116Z ##[group]GITHUB_TOKEN Permissions
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:36.0127070Z Contents: read
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:36.0127887Z Metadata: read
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:36.0128704Z ##[endgroup]
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:36.0132078Z Secret source: Actions
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:36.0133256Z Prepare workflow directory
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:36.0756462Z Prepare all required actions
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:36.0812847Z Getting action download info
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:36.3939287Z Download action repository 'actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8' (SHA:08c6903cd8c0fde910a37f88322edcfb5dd907a8)
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:36.5601111Z Download action repository 'actions/download-artifact@37930b1c2abaa49bbe596cd826c3c89aef350131' (SHA:37930b1c2abaa49bbe596cd826c3c89aef350131)
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:36.7988529Z Download action repository 'actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f' (SHA:b7c566a772e6b6bfb58ed0dc250532a479d7789f)
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.1347560Z Complete job name: Account UI E2E (chromium)
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.2255265Z ##[group]Run actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.2256582Z with:
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.2257023Z   repository: keycloak/keycloak
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.2257864Z   token: ***
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.2258269Z   ssh-strict: true
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.2259077Z   ssh-user: git
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.2259583Z   persist-credentials: true
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.2260067Z   clean: true
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.2260497Z   sparse-checkout-cone-mode: true
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.2261006Z   fetch-depth: 1
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.2261408Z   fetch-tags: false
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.2261839Z   show-progress: true
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.2262262Z   lfs: false
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.2262675Z   submodules: false
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.2263142Z   set-safe-directory: true
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.2264674Z env:
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.2265306Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.2266098Z   WORKSPACE: @keycloak/keycloak-account-ui
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.2266741Z ##[endgroup]
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.3411124Z Syncing repository: keycloak/keycloak
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.3413743Z ##[group]Getting Git version info
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.3414869Z Working directory is '/home/runner/work/keycloak/keycloak'
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.3416549Z [command]/usr/bin/git version
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.3417056Z git version 2.53.0
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.3438622Z ##[endgroup]
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.3458772Z Temporarily overriding HOME='/home/runner/work/_temp/b358f9e1-ecf3-46c6-81d7-8a9a3210dd05' before making global git config changes
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.3461311Z Adding repository directory to the temporary git global config as a safe directory
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.3465936Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/keycloak/keycloak
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.3513476Z Deleting the contents of '/home/runner/work/keycloak/keycloak'
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.3519138Z ##[group]Initializing the repository
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.3525205Z [command]/usr/bin/git init /home/runner/work/keycloak/keycloak
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.3602740Z hint: Using 'master' as the name for the initial branch. This default branch name
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.3605818Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.3609097Z hint: to use in all of your new repositories, which will suppress this warning,
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.3610832Z hint: call:
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.3611700Z hint:
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.3613216Z hint: 	git config --global init.defaultBranch <name>
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.3614229Z hint:
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.3614853Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.3616251Z hint: 'development'. The just-created branch can be renamed via this command:
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.3617026Z hint:
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.3617430Z hint: 	git branch -m <name>
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.3617894Z hint:
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.3618499Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.3619814Z Initialized empty Git repository in /home/runner/work/keycloak/keycloak/.git/
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.3621733Z [command]/usr/bin/git remote add origin https://github.com/keycloak/keycloak
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.3664789Z ##[endgroup]
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.3665980Z ##[group]Disabling automatic garbage collection
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.3669781Z [command]/usr/bin/git config --local gc.auto 0
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.3718337Z ##[endgroup]
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.3719407Z ##[group]Setting up auth
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.3720186Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.3761838Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.4125497Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.4171465Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.4448349Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.4499542Z ##[endgroup]
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.4501035Z ##[group]Fetching the repository
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:37.4512632Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +a112b28dc77cbe5cbc4bd582eb7a85ca75edcd19:refs/remotes/origin/main
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:38.8998654Z From https://github.com/keycloak/keycloak
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:38.9002783Z  * [new ref]         a112b28dc77cbe5cbc4bd582eb7a85ca75edcd19 -> origin/main
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:38.9042630Z ##[endgroup]
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:38.9043341Z ##[group]Determining the checkout info
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:38.9045926Z ##[endgroup]
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:38.9053539Z [command]/usr/bin/git sparse-checkout disable
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:38.9115845Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:38.9167469Z ##[group]Checking out the ref
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:38.9168224Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:39.8990448Z Switched to a new branch 'main'
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:39.8991240Z branch 'main' set up to track 'origin/main'.
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:39.9041560Z ##[endgroup]
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:39.9100026Z [command]/usr/bin/git log -1 --format=%H
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:39.9137175Z a112b28dc77cbe5cbc4bd582eb7a85ca75edcd19
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:39.9524357Z Prepare all required actions
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:39.9525364Z Getting action download info
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:40.0731910Z Download action repository 'actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:40.1836230Z ##[group]Run ./.github/actions/pnpm-setup
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:40.1836880Z with:
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:40.1837086Z   node-version: 24
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:40.1837292Z env:
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:40.1837607Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:40.1838009Z   WORKSPACE: @keycloak/keycloak-account-ui
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:40.1838281Z ##[endgroup]
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:40.2142782Z ##[group]Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:40.2143231Z with:
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:40.2143451Z   node-version: 24
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:40.2143654Z   check-latest: true
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:40.2143885Z   always-auth: false
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:40.2144428Z   token: ***
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:40.2144876Z env:
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:40.2145170Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:40.2145575Z   WORKSPACE: @keycloak/keycloak-account-ui
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:40.2145848Z ##[endgroup]
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:40.4479757Z Attempt to resolve the latest version from manifest...
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:40.7789627Z Resolved as '24.14.1'
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:40.7808534Z Found in cache @ /opt/hostedtoolcache/node/24.14.1/x64
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:40.7816795Z ##[group]Environment details
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.2965314Z node: v24.14.1
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.2965582Z npm: 11.11.0
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.2965783Z yarn: 1.22.22
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.2967326Z ##[endgroup]
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.3155962Z Prepare all required actions
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.3156311Z Getting action download info
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.4441571Z Download action repository 'actions/cache@5a3ec84eff668545956fd18022155c47e93e2684' (SHA:5a3ec84eff668545956fd18022155c47e93e2684)
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.6421107Z ##[group]Run ./.github/actions/corepack-setup
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.6421418Z env:
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.6421720Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.6422080Z   WORKSPACE: @keycloak/keycloak-account-ui
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.6422336Z ##[endgroup]
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.6459217Z ##[group]Run corepack enable
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.6459621Z [36;1mcorepack enable[0m
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.6505498Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.6505962Z env:
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.6506319Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.6506710Z   WORKSPACE: @keycloak/keycloak-account-ui
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.6506996Z ##[endgroup]
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.7779926Z ##[group]Run echo "key=corepack-tools-$(jq -r '.packageManager' package.json)" >> $GITHUB_OUTPUT
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.7780624Z [36;1mecho "key=corepack-tools-$(jq -r '.packageManager' package.json)" >> $GITHUB_OUTPUT[0m
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.7805108Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.7805491Z env:
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.7805805Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.7806195Z   WORKSPACE: @keycloak/keycloak-account-ui
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.7806461Z ##[endgroup]
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.7991831Z ##[group]Run actions/cache@5a3ec84eff668545956fd18022155c47e93e2684
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.7992203Z with:
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.7992387Z   path: ./js/corepack.tgz
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.7993148Z   key: Linux-corepack-tools-pnpm@10.14.0+sha512.ad27a79641b49c3e481a16a805baa71817a04bbe06a38d17e60e2eaee83f6a146c6a688125f5792e48dd5ba30e7da52a5cda4c3992b9ccf333f9ce223af84748
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.7993915Z   enableCrossOsArchive: false
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.7994144Z   fail-on-cache-miss: false
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.7994371Z   lookup-only: false
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.7994564Z   save-always: false
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.7994757Z env:
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.7995032Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.7995709Z   WORKSPACE: @keycloak/keycloak-account-ui
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:45.7995965Z ##[endgroup]
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:46.0115248Z Cache hit for: Linux-corepack-tools-pnpm@10.14.0+sha512.ad27a79641b49c3e481a16a805baa71817a04bbe06a38d17e60e2eaee83f6a146c6a688125f5792e48dd5ba30e7da52a5cda4c3992b9ccf333f9ce223af84748
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:46.1440837Z Received 4351040 of 4351040 (100.0%), 44.6 MBs/sec
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:46.1442014Z Cache Size: ~4 MB (4351040 B)
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:46.1481027Z [command]/usr/bin/tar -xf /home/runner/work/_temp/0f86b281-c980-48e6-b36a-f07fec115561/cache.tzst -P -C /home/runner/work/keycloak/keycloak --use-compress-program unzstd
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:46.1619442Z Cache restored successfully
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:46.1711265Z Cache restored from key: Linux-corepack-tools-pnpm@10.14.0+sha512.ad27a79641b49c3e481a16a805baa71817a04bbe06a38d17e60e2eaee83f6a146c6a688125f5792e48dd5ba30e7da52a5cda4c3992b9ccf333f9ce223af84748
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:46.1814759Z ##[group]Run corepack install -g --cache-only ./corepack.tgz
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:46.1815223Z [36;1mcorepack install -g --cache-only ./corepack.tgz[0m
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:46.1840542Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:46.1840893Z env:
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:46.1841200Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:46.1841580Z   WORKSPACE: @keycloak/keycloak-account-ui
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:46.1841871Z ##[endgroup]
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:46.3599960Z Adding pnpm@10.14.0 to the cache...
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:47.4326758Z Prepare all required actions
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:47.4327086Z Getting action download info
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:47.5608081Z ##[group]Run ./.github/actions/pnpm-store-cache
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:47.5608379Z env:
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:47.5608672Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:47.5609236Z   WORKSPACE: @keycloak/keycloak-account-ui
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:47.5609496Z ##[endgroup]
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:47.5649732Z ##[group]Run echo "key=pnpm-store-`date -u "+%Y-%U"`" >> $GITHUB_OUTPUT
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:47.5650223Z [36;1mecho "key=pnpm-store-`date -u "+%Y-%U"`" >> $GITHUB_OUTPUT[0m
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:47.5673136Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:47.5673449Z env:
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:47.5673741Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:47.5674111Z   WORKSPACE: @keycloak/keycloak-account-ui
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:47.5674397Z ##[endgroup]
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:47.5779573Z ##[group]Run actions/cache@5a3ec84eff668545956fd18022155c47e93e2684
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:47.5779910Z with:
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:47.5780236Z   path: ~/.local/share/pnpm/store
+Account UI E2E (chromium)	UNKNOWN STEP	~/AppData/Local/pnpm/store
+Account UI E2E (chromium)	UNKNOWN STEP	~/Library/pnpm/store
+Account UI E2E (chromium)	UNKNOWN STEP	
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:47.5780642Z   key: Linux-pnpm-store-2026-15
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:47.5780892Z   enableCrossOsArchive: false
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:47.5781135Z   fail-on-cache-miss: false
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:47.5781359Z   lookup-only: false
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:47.5781559Z   save-always: false
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:47.5781754Z env:
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:47.5782049Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:47.5782414Z   WORKSPACE: @keycloak/keycloak-account-ui
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:47.5782680Z ##[endgroup]
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:47.7870752Z Cache hit for: Linux-pnpm-store-2026-15
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:48.3884219Z Received 133410302 of 133410302 (100.0%), 232.6 MBs/sec
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:48.3884688Z Cache Size: ~127 MB (133410302 B)
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:48.3912126Z [command]/usr/bin/tar -xf /home/runner/work/_temp/0f38535a-5057-4c08-9808-8da8601ed4a0/cache.tzst -P -C /home/runner/work/keycloak/keycloak --use-compress-program unzstd
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:50.8718466Z Cache restored successfully
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:50.8868446Z Cache restored from key: Linux-pnpm-store-2026-15
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:50.8983563Z ##[group]Run pnpm install --prefer-offline --frozen-lockfile
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:50.8984039Z [36;1mpnpm install --prefer-offline --frozen-lockfile[0m
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:50.9007661Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:50.9008252Z env:
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:50.9009141Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:50.9009603Z   WORKSPACE: @keycloak/keycloak-account-ui
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:50.9009898Z ##[endgroup]
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:51.4001598Z Scope: all 8 workspace projects
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:51.4512686Z Lockfile is up to date, resolution step is skipped
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:51.5119595Z Progress: resolved 1, reused 0, downloaded 0, added 0
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:51.6396916Z Packages: +914
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:51.6397454Z ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:52.5159096Z Progress: resolved 914, reused 909, downloaded 0, added 93
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:53.5154748Z Progress: resolved 914, reused 909, downloaded 0, added 784
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:54.2540672Z Progress: resolved 914, reused 909, downloaded 0, added 914, done
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.1123683Z 
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.1124337Z devDependencies:
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.1124743Z + @eslint/compat 2.0.0
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.1125018Z + @eslint/eslintrc 3.3.3
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.1125368Z + @eslint/js 9.39.2
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.1125610Z + @types/node 25.0.3
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.1125838Z + eslint 9.39.2
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.1126114Z + eslint-config-prettier 10.1.8
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.1126398Z + eslint-plugin-lodash 8.0.0
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.1126703Z + eslint-plugin-playwright 2.4.0
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.1127016Z + eslint-plugin-prettier 5.5.4
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.1127300Z + eslint-plugin-react 7.37.5
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.1127625Z + eslint-plugin-react-compiler 19.1.0-rc.2
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.1127973Z + eslint-plugin-react-hooks 6.1.0
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.1128227Z + husky 9.1.7
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.1128531Z + lint-staged 16.4.0
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.1128745Z + prettier 3.6.2
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.1129273Z + tslib 2.8.1
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.1129547Z + typescript 5.9.3
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.1129788Z + typescript-eslint 8.42.0
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.1130034Z + wireit 0.14.12
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.1130170Z 
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.1319658Z . prepare$ cd .. && husky js/.husky
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.1327262Z libs/keycloak-admin-client postinstall$ pnpm generate:openapi
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.1931320Z . prepare: Done
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.4366738Z libs/keycloak-admin-client postinstall: > @keycloak/keycloak-admin-client@999.0.0-SNAPSHOT generate:openapi /home/runner/work/keycloak/keycloak/js/libs/keycloak-admin-client
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.4367993Z libs/keycloak-admin-client postinstall: > wireit
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.5485367Z libs/keycloak-admin-client postinstall: Analyzing
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.8969503Z libs/keycloak-admin-client postinstall: Request Failed.
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.8970506Z libs/keycloak-admin-client postinstall: Status Code: 403
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.8984997Z libs/keycloak-admin-client postinstall: Error: Request Failed.
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.8986258Z libs/keycloak-admin-client postinstall: Status Code: 403
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.8989619Z libs/keycloak-admin-client postinstall:     at RedirectableRequest.<anonymous> (/home/runner/work/keycloak/keycloak/js/node_modules/.pnpm/@kiota-community+kiota-gen@1.0.2/node_modules/@kiota-community/kiota-gen/bin/kiota.js:70:31)
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.8991499Z libs/keycloak-admin-client postinstall:     at RedirectableRequest.emit (node:events:508:28)
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.8993408Z libs/keycloak-admin-client postinstall:     at RedirectableRequest._processResponse (/home/runner/work/keycloak/keycloak/js/node_modules/.pnpm/follow-redirects@1.15.9/node_modules/follow-redirects/index.js:409:10)
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.8995921Z libs/keycloak-admin-client postinstall:     at RedirectableRequest._onNativeResponse (/home/runner/work/keycloak/keycloak/js/node_modules/.pnpm/follow-redirects@1.15.9/node_modules/follow-redirects/index.js:102:12)
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.8997685Z libs/keycloak-admin-client postinstall:     at Object.onceWrapper (node:events:623:26)
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.8998748Z libs/keycloak-admin-client postinstall:     at ClientRequest.emit (node:events:508:28)
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.9000238Z libs/keycloak-admin-client postinstall:     at HTTPParser.parserOnIncomingClient (node:_http_client:780:27)
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.9001774Z libs/keycloak-admin-client postinstall:     at HTTPParser.parserOnHeadersComplete (node:_http_common:125:17)
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.9002735Z libs/keycloak-admin-client postinstall:     at TLSSocket.socketOnData (node:_http_client:615:22)
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.9003415Z libs/keycloak-admin-client postinstall:     at TLSSocket.emit (node:events:508:28)
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.9051242Z libs/keycloak-admin-client postinstall: ❌ [generate:openapi] exited with exit code 1.
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.9054428Z libs/keycloak-admin-client postinstall: ❌ 1 script failed.
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.9247298Z libs/keycloak-admin-client postinstall:  ELIFECYCLE  Command failed with exit code 1.
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.9443875Z libs/keycloak-admin-client postinstall: Failed
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:55.9615037Z  ELIFECYCLE  Command failed with exit code 1.
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.0124254Z ##[error]Process completed with exit code 1.
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.0209116Z ##[group]Run actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.0209536Z with:
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.0209774Z   name: account-ui-playwright-report-chromium
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.0210103Z   path: js/apps/account-ui/playwright-report
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.0210377Z   retention-days: 30
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.0210598Z   if-no-files-found: warn
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.0210823Z   compression-level: 6
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.0211073Z   overwrite: false
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.0211290Z   include-hidden-files: false
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.0211550Z env:
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.0211860Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.0212255Z   WORKSPACE: @keycloak/keycloak-account-ui
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.0212528Z ##[endgroup]
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.1828686Z ##[warning]No files were found with the provided path: js/apps/account-ui/playwright-report. No artifacts will be uploaded.
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.1945823Z ##[group]Run actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.1946217Z with:
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.1946430Z   name: account-ui-server-log-chromium
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.1946703Z   path: ~/server.log
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.1946932Z   if-no-files-found: warn
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.1947167Z   compression-level: 6
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.1947385Z   overwrite: false
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.1947592Z   include-hidden-files: false
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.1947822Z env:
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.1948108Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.1948509Z   WORKSPACE: @keycloak/keycloak-account-ui
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.1948777Z ##[endgroup]
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.3717127Z ##[warning]No files were found with the provided path: ~/server.log. No artifacts will be uploaded.
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.3903129Z Post job cleanup.
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.3987819Z Post job cleanup.
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.4846438Z [command]/usr/bin/git version
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.4884269Z git version 2.53.0
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.4922825Z Temporarily overriding HOME='/home/runner/work/_temp/4333ef04-6a97-4f05-85f7-56fc359f900d' before making global git config changes
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.4924478Z Adding repository directory to the temporary git global config as a safe directory
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.4929097Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/keycloak/keycloak
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.4968525Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.5026934Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.5294182Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.5320561Z http.https://github.com/.extraheader
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.5330634Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.5367288Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.5786147Z Cleaning up orphan processes
+Account UI E2E (chromium)	UNKNOWN STEP	2026-04-12T05:08:56.6088034Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/cache@5a3ec84eff668545956fd18022155c47e93e2684, actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020. Actions will be forced to run with Node.js 24 by default starting June 2nd, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	﻿2026-04-12T05:33:45.2038770Z Current runner version: '2.333.1'
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.2075350Z ##[group]Runner Image Provisioner
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.2076605Z Hosted Compute Agent
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.2077486Z Version: 20260213.493
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.2078600Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.2079680Z Build Date: 2026-02-13T00:28:41Z
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.2080645Z Worker ID: {9b7ead2d-8b4f-45fc-b858-203b7df9f5b2}
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.2081767Z Azure Region: eastus
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.2082543Z ##[endgroup]
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.2084477Z ##[group]Operating System
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.2085386Z Ubuntu
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.2086074Z 24.04.4
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.2086763Z LTS
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.2087386Z ##[endgroup]
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.2088533Z ##[group]Runner Image
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.2089370Z Image: ubuntu-24.04
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.2090112Z Version: 20260406.80.1
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.2092131Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260406.80/images/ubuntu/Ubuntu2404-Readme.md
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.2094744Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260406.80
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.2096268Z ##[endgroup]
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.2098055Z ##[group]GITHUB_TOKEN Permissions
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.2100789Z Contents: read
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.2101593Z Metadata: read
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.2102293Z ##[endgroup]
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.2105061Z Secret source: Actions
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.2106415Z Prepare workflow directory
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.2666940Z Prepare all required actions
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.2722107Z Getting action download info
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.5590257Z Download action repository 'actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8' (SHA:08c6903cd8c0fde910a37f88322edcfb5dd907a8)
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.8018539Z Complete job name: Status Check - Keycloak JavaScript CI
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.8811182Z ##[group]Run actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.8812119Z with:
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.8812518Z   repository: keycloak/keycloak
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.8813192Z   token: ***
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.8813576Z   ssh-strict: true
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.8813955Z   ssh-user: git
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.8814352Z   persist-credentials: true
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.8814802Z   clean: true
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.8815189Z   sparse-checkout-cone-mode: true
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.8815653Z   fetch-depth: 1
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.8816020Z   fetch-tags: false
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.8816413Z   show-progress: true
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.8816796Z   lfs: false
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.8817154Z   submodules: false
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.8817540Z   set-safe-directory: true
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.8818327Z env:
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.8818851Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.8819476Z ##[endgroup]
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.9761781Z Syncing repository: keycloak/keycloak
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.9763478Z ##[group]Getting Git version info
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.9764143Z Working directory is '/home/runner/work/keycloak/keycloak'
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.9765112Z [command]/usr/bin/git version
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.9796078Z git version 2.53.0
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.9849709Z ##[endgroup]
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.9864502Z Temporarily overriding HOME='/home/runner/work/_temp/3733296f-7747-475e-bb69-f31a082b8913' before making global git config changes
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.9869628Z Adding repository directory to the temporary git global config as a safe directory
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.9870856Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/keycloak/keycloak
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.9905751Z Deleting the contents of '/home/runner/work/keycloak/keycloak'
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.9910088Z ##[group]Initializing the repository
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.9914901Z [command]/usr/bin/git init /home/runner/work/keycloak/keycloak
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.9979155Z hint: Using 'master' as the name for the initial branch. This default branch name
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.9980653Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.9981616Z hint: to use in all of your new repositories, which will suppress this warning,
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.9982619Z hint: call:
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.9982965Z hint:
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.9983435Z hint: 	git config --global init.defaultBranch <name>
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.9984041Z hint:
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.9984578Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.9985771Z hint: 'development'. The just-created branch can be renamed via this command:
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.9986615Z hint:
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.9986982Z hint: 	git branch -m <name>
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.9987418Z hint:
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.9988241Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.9989158Z Initialized empty Git repository in /home/runner/work/keycloak/keycloak/.git/
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:45.9991165Z [command]/usr/bin/git remote add origin https://github.com/keycloak/keycloak
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:46.0023283Z ##[endgroup]
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:46.0023971Z ##[group]Disabling automatic garbage collection
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:46.0027018Z [command]/usr/bin/git config --local gc.auto 0
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:46.0056743Z ##[endgroup]
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:46.0057384Z ##[group]Setting up auth
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:46.0063946Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:46.0097574Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:46.0399318Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:46.0433172Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:46.0669836Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:46.0708483Z ##[endgroup]
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:46.0709554Z ##[group]Fetching the repository
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:46.0718620Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +a112b28dc77cbe5cbc4bd582eb7a85ca75edcd19:refs/remotes/origin/main
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:49.7470358Z From https://github.com/keycloak/keycloak
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:49.7471521Z  * [new ref]         a112b28dc77cbe5cbc4bd582eb7a85ca75edcd19 -> origin/main
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:49.7502126Z ##[endgroup]
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:49.7503586Z ##[group]Determining the checkout info
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:49.7505361Z ##[endgroup]
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:49.7509592Z [command]/usr/bin/git sparse-checkout disable
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:49.7556959Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:49.7587514Z ##[group]Checking out the ref
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:49.7591706Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.6663255Z Switched to a new branch 'main'
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.6664576Z branch 'main' set up to track 'origin/main'.
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.6701180Z ##[endgroup]
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.6743553Z [command]/usr/bin/git log -1 --format=%H
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.6769690Z a112b28dc77cbe5cbc4bd582eb7a85ca75edcd19
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7073209Z Prepare all required actions
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7180648Z ##[group]Run ./.github/actions/status-check
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7181798Z with:
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7187521Z   jobs: {
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  "conditional": {
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "result": "success",
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "outputs": {
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	      "js-ci": "true"
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    }
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  },
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  "build-keycloak": {
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "result": "success",
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "outputs": {}
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  },
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  "admin-client": {
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "result": "success",
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "outputs": {}
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  },
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  "ui-shared": {
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "result": "success",
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "outputs": {}
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  },
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  "account-ui": {
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "result": "success",
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "outputs": {}
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  },
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  "account-ui-e2e": {
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "result": "failure",
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "outputs": {}
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  },
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  "admin-ui": {
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "result": "success",
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "outputs": {}
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  },
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  "admin-ui-e2e": {
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "result": "success",
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "outputs": {}
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  },
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  "keycloak-admin-client": {
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "result": "success",
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	    "outputs": {}
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	  }
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	}
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7193984Z env:
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7195085Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7196410Z ##[endgroup]
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7325559Z ##[group]Run JOBS='{
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7326591Z [36;1mJOBS='{[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7327464Z [36;1m  "conditional": {[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7328658Z [36;1m    "result": "success",[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7329668Z [36;1m    "outputs": {[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7330628Z [36;1m      "js-ci": "true"[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7331575Z [36;1m    }[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7332384Z [36;1m  },[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7333243Z [36;1m  "build-keycloak": {[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7334284Z [36;1m    "result": "success",[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7335288Z [36;1m    "outputs": {}[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7336200Z [36;1m  },[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7337027Z [36;1m  "admin-client": {[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7338091Z [36;1m    "result": "success",[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7339101Z [36;1m    "outputs": {}[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7339972Z [36;1m  },[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7340740Z [36;1m  "ui-shared": {[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7341626Z [36;1m    "result": "success",[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7342575Z [36;1m    "outputs": {}[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7343459Z [36;1m  },[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7344243Z [36;1m  "account-ui": {[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7345151Z [36;1m    "result": "success",[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7346102Z [36;1m    "outputs": {}[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7346969Z [36;1m  },[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7348105Z [36;1m  "account-ui-e2e": {[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7349076Z [36;1m    "result": "failure",[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7350043Z [36;1m    "outputs": {}[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7350919Z [36;1m  },[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7351681Z [36;1m  "admin-ui": {[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7352568Z [36;1m    "result": "success",[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7353500Z [36;1m    "outputs": {}[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7354358Z [36;1m  },[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7355148Z [36;1m  "admin-ui-e2e": {[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7356051Z [36;1m    "result": "success",[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7357066Z [36;1m    "outputs": {}[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7358079Z [36;1m  },[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7358906Z [36;1m  "keycloak-admin-client": {[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7359903Z [36;1m    "result": "success",[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7360841Z [36;1m    "outputs": {}[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7361684Z [36;1m  }[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7362413Z [36;1m}'[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7363140Z [36;1m[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7363935Z [36;1mecho "Job status:"[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7365183Z [36;1mecho $JOBS | jq -r 'to_entries[] | " - \(.key): \(.value.result)"'[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7366453Z [36;1m[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7367478Z [36;1mfor i in $(echo $JOBS | jq -r 'to_entries[] | .value.result'); do[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7369031Z [36;1m  if [ "$i" != "success" ] && [ "$i" != "skipped" ]; then[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7370186Z [36;1m    echo ""[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7371072Z [36;1m    echo "Status check not okay!"[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7372072Z [36;1m    exit 1[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7372855Z [36;1m  fi[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7373584Z [36;1mdone[0m
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7402376Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7403604Z env:
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7404643Z   MAVEN_ARGS: -B -nsu -Daether.connector.http.connectionMaxTtl=25
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7405918Z ##[endgroup]
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7482922Z Job status:
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7514751Z  - conditional: success
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7515782Z  - build-keycloak: success
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7516726Z  - admin-client: success
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7517610Z  - ui-shared: success
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7518674Z  - account-ui: success
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7519540Z  - account-ui-e2e: failure
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7520435Z  - admin-ui: success
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7521274Z  - admin-ui-e2e: success
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7522566Z  - keycloak-admin-client: success
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7552927Z 
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7553658Z Status check not okay!
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7569302Z ##[error]Process completed with exit code 1.
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.7780853Z Post job cleanup.
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.8588961Z [command]/usr/bin/git version
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.8626494Z git version 2.53.0
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.8664666Z Temporarily overriding HOME='/home/runner/work/_temp/5c68be1e-f410-4fb5-ada2-4460ea639084' before making global git config changes
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.8668707Z Adding repository directory to the temporary git global config as a safe directory
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.8671852Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/keycloak/keycloak
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.8707589Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.8741295Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.8991364Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.9016561Z http.https://github.com/.extraheader
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.9027096Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.9060213Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Status Check - Keycloak JavaScript CI	UNKNOWN STEP	2026-04-12T05:33:50.9462990Z Cleaning up orphan processes
