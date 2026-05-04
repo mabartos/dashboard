@@ -68,6 +68,7 @@ public class Dashboard {
         attributes.put("enhancementStats", enhancements.getStats());
         attributes.put("enhancementTeamStats", enhancements.getTeamStats());
         attributes.put("topReactedEnhancements", enhancements.getTopReacted());
+        attributes.put("missingLabelsEnhancements", enhancements.getMissingLabelsIssues());
         attributes.put("failedRuns", logFailedParser.getFailedRuns());
         attributes.put("resolvedRuns", logFailedParser.getResolvedRuns());
         attributes.put("failedJobs", logFailedParser.getUnlinkedFailedJobs());
