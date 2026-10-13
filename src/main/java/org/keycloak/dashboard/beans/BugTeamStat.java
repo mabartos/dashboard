@@ -16,10 +16,10 @@ public class BugTeamStat {
     private List<BugStat> columns = new LinkedList<>();
 
     public BugTeamStat(String team, FilteredIssues issues, String nextRelease) {
-        this(team, issues, nextRelease, "bugs");
+        this(team, issues, nextRelease, "bugs", true);
     }
 
-    protected BugTeamStat(String team, FilteredIssues issues, String nextRelease, String configNamespace) {
+    protected BugTeamStat(String team, FilteredIssues issues, String nextRelease, String configNamespace, boolean includeTriage) {
         this.team = team;
         this.issues = issues;
         this.configNamespace = configNamespace;
@@ -28,11 +28,13 @@ public class BugTeamStat {
 //                .issues(issues.clone().milestone(nextRelease))
 //                .warnErrorKey("Milestone"));
 
-        columns.add(column("Triage")
-                .issues(issues.clone().triage(true)));
+        if (includeTriage) {
+            columns.add(column("Triage")
+                    .issues(issues.clone().triage(true)));
 
-        columns.add(column("Triage Overdue")
-                .issues(issues.clone().triage(true).createdBefore(DateUtil.minusdays(Config.getInt("bugs.TriageOverdue.days")))));
+            columns.add(column("Triage Overdue")
+                    .issues(issues.clone().triage(true).createdBefore(DateUtil.minusdays(Config.getInt("bugs.TriageOverdue.days")))));
+        }
 
         columns.add(column("Blocker")
                 .issues(issues.clone().triage(false).priority("blocker")));

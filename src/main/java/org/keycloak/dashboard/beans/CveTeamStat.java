@@ -18,13 +18,6 @@ public class CveTeamStat {
         this.team = team;
         this.issues = issues;
 
-        columns.add(BugStat.team("Triage")
-                .issues(issues.clone().triage(true)));
-
-        columns.add(BugStat.team("Triage Overdue")
-                .issues(issues.clone().triage(true).ready(false)
-                        .createdBefore(DateUtil.minusdays(Config.getInt("bugs.TriageOverdue.days")))));
-
         columns.add(BugStat.team("Open").warnErrorKey("CveOpen")
                 .issues(issues.clone().triage(false)));
 
